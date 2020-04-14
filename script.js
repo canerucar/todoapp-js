@@ -83,13 +83,14 @@ function createItem(text) {
 function addNewItem(e) {
     if (input.value === '') {
         alert('add new item');
-    }
+    }else{
 
     // create item
     createItem(input.value);
 
     // save to LS
     setItemToLS(input.value);
+    }
 
     // clear input
     input.value = '';
